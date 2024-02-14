@@ -1,10 +1,7 @@
 package com.mandacarubroker.domain.stock;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Table(name ="stock")
 @Entity(name="stock")
@@ -28,27 +25,23 @@ public class Stock {
     }
 
     public double changePrice(double amount, boolean increase) {
-        if (increase) {
-            if (amount < this.price) {
-                return increasePrice(amount);
-            } else {
-                return decreasePrice(amount);
-            }
-        } else {
-            if (amount > this.price) {
-                return increasePrice(amount);
-            } else {
-                return this.decreasePrice(amount);
-            }
+        if (increase){
+            return increasePrice(amount);
         }
+
+        this.price=amount;
+
+        return this.price;
     }
 
     public double increasePrice(double amount) {
-        return this.price + amount;
+        this.price = this.price + amount;
+        return this.price;
     }
 
     public double decreasePrice(double amount) {
-        return this.price - amount;
+        this.price = this.price - amount;
+        return this.price;
     }
 
 }
