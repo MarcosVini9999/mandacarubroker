@@ -1,5 +1,7 @@
 # MandaCaru Broker API
 
+# [Relatório](https://github.com/MarcosVini9999/mandacarubroker/blob/main/REPORT.md) 📓📜
+
 ## Descrição
 A Mandacaru Broker API é uma aplicação Spring Boot que fornece operações CRUD (Create, Read, Update, Delete) para gerenciar informações sobre ações (stocks).
 
