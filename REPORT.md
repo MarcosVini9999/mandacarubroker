@@ -80,5 +80,5 @@ O uso do checkStyle foi responsável pelos `testes estáticos` do projeto. Dessa
 ### Google Checks
 ![image](https://github.com/MarcosVini9999/mandacarubroker/assets/66041553/80fe82a7-e90d-4981-a4f6-c88bd9932a3d)
 
-## Dependências não usadas e não declaradas que foram mapeadas
+## Dependências não usadas ou não declaradas que foram mapeadas
 ![image](https://github.com/MarcosVini9999/mandacarubroker/assets/66041553/5cb5d5c5-8c5b-4305-aa9d-397d3602f54c)
